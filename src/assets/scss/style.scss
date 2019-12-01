@@ -1,0 +1,170 @@
+@import 'normalize';
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	color: rgba($color: #000000, $alpha: 0.87);
+	background-color: #f5f5f5;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input, textarea, button {
+	&:focus, &:hover {
+		outline: none;
+	}
+}
+textarea {
+	resize: vertical;
+}
+a {
+	color: #2196f3;
+}
+.logo {
+	box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+}
+
+#content {
+	padding-top: 30px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		height: 120px;
+		width: 100%;
+		background-color: #FDCB6E;
+		z-index: -1;
+	}
+}
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.card {
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.material-icons {
+	vertical-align: middle;
+}
+.mb-0 {
+	margin-bottom: 0!important;
+}
+
+/*
+Form
+*/
+.form-container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.form-header {
+	text-align: center;
+}
+.form-title {
+	margin-top: 20px;
+	font-size: 48px;
+	font-weight: 100;
+}
+.form-card {
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+}
+.form-group {
+	margin-bottom: 15px;
+	label {
+		display: inline-block;
+		margin-bottom: 5px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}
+.form-control {
+	display: block;
+	width: 100%;
+	border: 2px solid #bdbdbd;
+	border-radius: 5px;
+	padding: 5px 15px;
+	height: 42px;
+	line-height: 42px;
+	transition: 200ms ease;
+
+	&:focus {
+		border-color: #616161;
+	}
+}
+.form-footer {
+	color: rgba($color: #000000, $alpha: 0.54);
+	text-align: center;
+	margin-top: 20px;
+}
+.error {
+	text-align: center;
+	color: #d32f2f;
+	border: 2px solid #d32f2f;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+	i {
+		margin-right: 5px;
+	}
+}
+
+
+/*
+Buttons
+*/
+.button {
+	padding: 10px 20px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 0;
+	font-weight: 700;
+
+	i {
+		font-size: 16px;
+		vertical-align: sub;
+	}
+}
+.button-primary {
+	background-color: #FDCB6E;
+}
+.button-outline {
+	border: 1px solid #bdbdbd;
+}
+.button-danger {
+	background-color: #ef9a9a;
+}
+.button-wide {
+	display: block;
+	padding: 10px 80px;
+	margin: 0 auto;
+}
+
+button:disabled {
+	opacity: .75;
+	color: #616161;
+	cursor: not-allowed;
+}
+
+::placeholder {
+	color: rgba($color: #000000, $alpha: 0.54);
+}
+[contenteditable=true] {
+	&:focus {
+		outline: none;
+	}
+}
