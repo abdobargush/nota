@@ -20,8 +20,8 @@ Email: demo@nota.test \
 Password: 123456
 
 ### Credits
-Thanks for the author of content-editable componentcode \
-link: https://bit.ly/37Uo67A \
+Thanks for the author of content-editable component \
+code link: https://bit.ly/37Uo67A \
 thread: https://bit.ly/34FOlMS
 
 ### License
